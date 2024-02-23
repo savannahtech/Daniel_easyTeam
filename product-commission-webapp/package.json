@@ -1,0 +1,35 @@
+{
+  "name": "product-commission-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1",
+    "@shopify/polaris": "^12.16.0",
+    "@shopify/react-i18n": "^7.10.1",
+    "@shopify/react-utilities": "^2.0.7",
+    "axios": "^1.6.7",
+    "dotenv": "^16.3.1",
+    "next": "^13.5.0",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.1.3",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.36",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "8.53.0",
+    "eslint-config-next": "14.0.1",
+    "typescript": "^5.2.2"
+  }
+}

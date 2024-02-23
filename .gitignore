@@ -1,0 +1,49 @@
+product-commission-server/.env
+product-commission-server/yarn.lock
+product-commission-server/package-lock.json
+product-commission-server/node_modules/
+product-commission-server/dist
+product-commission-server/coverage
+
+
+
+
+# GIT IGNORE FOR FRONTEND
+product-commission-webapp/.env
+product-commission-webapp/node_modules/
+product-commission-webapp/.
+product-commission-webapp/yarn.lock
+product-commission-webapp/package-lock.json
+
+product-commission-webapp/.pnp
+product-commission-webapp/.pnp.js
+product-commission-webapp/.yarn/install-state.gz
+
+# testing
+product-commission-webapp/coverage
+
+# next.js
+product-commission-webapp/.next/
+product-commission-webapp/out/
+
+# production
+product-commission-webapp/build
+
+# misc
+product-commission-webapp/.DS_Store
+product-commission-webapp/*.pem
+
+# debug
+product-commission-webapp/npm-debug.log*
+product-commission-webapp/yarn-debug.log*
+product-commission-webapp/yarn-error.log*
+
+# local env files
+product-commission-webapp/.env*.local
+
+# vercel
+product-commission-webapp/.vercel
+
+# typescript
+product-commission-webapp/*.tsbuildinfo
+product-commission-webapp/next-env.d.ts

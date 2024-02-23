@@ -1,0 +1,30 @@
+version: '3'
+services:
+  pc-server:
+    build: ./pc-server
+    restart: on-failure
+    hostname: pc-server
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+    depends_on:
+      - postgres
+
+  postgres:
+    image: 'postgres:14.1-alpine'
+    restart: on-failure
+    environment:
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+    ports:
+      - '5432:5432'
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
